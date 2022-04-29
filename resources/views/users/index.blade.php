@@ -1,6 +1,15 @@
 <x-app-layout>
     <div class="flex flex-col">
-        <div class="flex justify-end">
+        <div class="flex justify-between">
+            <div class="w-1/4 border-0 rounded relative text-white
+             @if(session()->get('flash_success'))
+             bg-green-500
+             @endif
+            ">
+                <span class="inline-block align-middle items-center p-2">
+                    {{ session()->get('flash_success') }}
+                </span>
+            </div>
             <button class="bg-green-700 text-white active:bg-green-900 font-bold text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
                 Add User
             </button>

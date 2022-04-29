@@ -28,7 +28,7 @@ class UsersController extends Controller
     public function index()
     {
         return view('users.index', [
-            'users' => $this->userRepository->paginate(10),
+            'users' => $this->userRepository->orderBy('created_at', 'DESC')->paginate(10),
             'roles' => Role::all(),
             'permissions' => Permission::get()->mapToGroups(fn($item, $key) => [$item['entity'] => ['name' => $item['name'],'id' => $item['id']]])
         ]);
@@ -44,7 +44,7 @@ class UsersController extends Controller
     {
         $this->userRepository->create($request);
 
-        return back();
+        return back()->withFlashSuccess('User Created');
     }
 
     /**
@@ -83,7 +83,7 @@ class UsersController extends Controller
             $this->userRepository->getById($id)
         );
 
-        return back();
+        return back()->withFlashSuccess('User Updated');
     }
 
     /**
@@ -96,6 +96,6 @@ class UsersController extends Controller
     {
         $this->userRepository->deleteById($id);
 
-        return back();
+        return back()->withFlashSuccess('User Deleted');
     }
 }
