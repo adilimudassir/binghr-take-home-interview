@@ -12,7 +12,7 @@ This project is a take-home interview for a fullstack laravel developer role at 
 
 - [Laravel 8](https://laravel.com/)
 - [Tailwindcss](https://tailwindcss.com/)
-- [Alpinejs](https://github.com/alpinejs/alpine)
+- [JQuery](https://jquery.com/)
 
 ## Installation
 
