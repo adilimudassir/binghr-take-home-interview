@@ -2064,7 +2064,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 $("#aside-toggle").click(function () {
   $("#aside").toggle();
-  console.log('asdas');
 });
 
 /***/ }),
