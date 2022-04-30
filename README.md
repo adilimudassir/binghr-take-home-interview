@@ -3,7 +3,7 @@ This project is a take-home interview for a fullstack laravel developer role at 
 
 ## Story
 - Every bit of the design must be replicated
-- The entry point must be the user's list, where users menu is highlited by default
+- The entry point must be the user's list, where users menu is highlighted by default
 - A user should be able to add users with their permissions
 - A user should be able to delete users records
 - A user should be able to update users records
