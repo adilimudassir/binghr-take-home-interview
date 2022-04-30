@@ -20,8 +20,9 @@ This project is a take-home interview for a fullstack laravel developer role at 
 2. run `composer install`
 3. run `cp .env.example .env` and change database credentials accordingly
 4. run `php artisan migrate --seed`
-3. run `npm install`
-4. run `php artisan serve` to start your web app
+5. run `npm install`
+6. run `npm run dev`
+8. run `php artisan serve` to start your web app
 
 ## Plugins
 
