@@ -4,7 +4,7 @@
             <div class="flex justify-start w-1/2 items-center flex-row">
                 <h4 class="w-24 text-lg flex p-5 leading-7 text-gray-600">Users</h4>
                 <form class="w-24 flex mx-4 relative" action="#" method="GET">
-                    <input type="text" name="account-number" id="account-number" class="focus:ring-blue-500 focus:border-blue-500 text-base w-full pr-10 sm:text-sm border-gray-100" placeholder="Year">
+                    <input type="text" name="account-number" id="account-number" class="focus:ring-slate-300 focus:border-slate-300 text-base w-full pr-10 sm:text-sm border-gray-100" placeholder="Year">
                     <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                         <!-- Heroicon name: solid/question-mark-circle -->
                         <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -13,7 +13,7 @@
                     </div>
                 </form>
                 <div class="mx-4 mr-10 w-96 relative flex">
-                    <input type="text" name="account-number" id="account-number" class="focus:ring-blue-500 focus:border-blue-500 text-base w-full pr-10 sm:text-sm border-gray-100" placeholder="Search...">
+                    <input type="text" name="account-number" id="account-number" class="focus:ring-slate-300 focus:border-slate-300 text-base w-full pr-10 sm:text-sm border-gray-100" placeholder="Search...">
                     <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                         <!-- Heroicon name: solid/question-mark-circle -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -24,17 +24,17 @@
             </div>
             <div class="flex-1 flex justify-end w-1/2 gap-4 flex-row items-center">
                 <form class="w-1/6 flex" action="#" method="GET">
-                    <select id="location" name="location" class="text-lg border-transparent bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <select id="location" name="location" class="text-lg border-transparent bg-gray-50 focus:outline-none focus:ring-slate-300 focus:border-slate-300">
                         <option>Language</option>
                     </select>
                 </form>
                 <form class="w-1/6 flex" action="#" method="GET">
-                    <select id="location" name="location" class="text-lg border-transparent bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <select id="location" name="location" class="text-lg border-transparent bg-gray-50 focus:outline-none focus:ring-slate-300 focus:border-slate-300">
                         <option>Reports</option>
                     </select>
                 </form>
                 <form class="w-1/6 flex" action="#" method="GET">
-                    <select id="location" name="location" class="text-lg border-transparent bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <select id="location" name="location" class="text-lg border-transparent bg-gray-50 focus:outline-none focus:ring-slate-300 focus:border-slate-300">
                         <option>Project</option>
                     </select>
                 </form>

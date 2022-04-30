@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use App\Repositories\UserRepository;
@@ -28,7 +29,7 @@ class UsersController extends Controller
     public function index()
     {
         return view('users.index', [
-            'users' => $this->userRepository->orderBy('created_at', 'DESC')->paginate(10),
+            'users' => User::filter(request()->all())->orderBy('created_at', 'DESC')->paginate(10),
             'roles' => Role::all(),
             'permissions' => Permission::get()->mapToGroups(fn($item, $key) => [$item['entity'] => ['name' => $item['name'],'id' => $item['id']]])
         ]);

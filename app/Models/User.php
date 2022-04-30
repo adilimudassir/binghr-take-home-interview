@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use EloquentFilter\Filterable;
+use App\ModelFilters\UserFilter;
 use Laravel\Sanctum\HasApiTokens;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
@@ -11,7 +13,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable, HasRoles;
+    use HasApiTokens, HasFactory, Notifiable, HasRoles, Filterable;
 
     /**
      * The attributes that are mass assignable.
@@ -53,5 +55,10 @@ class User extends Authenticatable
     public function getNameAttribute()
     {
         return "{$this->first_name} {$this->last_name}";
+    }
+
+    public function modelFilter()
+    {
+        return $this->provideFilter(UserFilter::class);
     }
 }

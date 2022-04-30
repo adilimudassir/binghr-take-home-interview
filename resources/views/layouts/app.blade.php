@@ -134,10 +134,10 @@
                             @include('layouts.topbar')
                             <!-- Your content -->
                             <div class="min-w-full flex-1 flex flex-col">
-                                <div class="grow mx-5 mt-10 mb-2 overflow-y-auto">
+                                <div class="grow mx-6 mt-10 mb-2 overflow-y-auto">
                                     {{ $slot }}
                                 </div>
-                                <div class="shrink">
+                                <div class="shrink mx-6">
                                     <span class="text-slate-400">&copy; Copyright {{ date('Y') }}</span>
                                     <span class="text-gray-500 font-bold">
                                         BingHR.io
