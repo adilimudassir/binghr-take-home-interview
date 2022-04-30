@@ -21,7 +21,9 @@
 <body class="font-sans antialiased">
     <div class="min-h-screen min-w-screen bg-gray-50">
         <!-- Page Content -->
-        <main x-data="{sideBarOpen: true}">
+        <main x-data="{sideBarOpen: true, toggleSideBar() {
+            this.sideBarOpen = ! this.sideBarOpen
+        }}">
             <div class="min-h-screen flex">
                 <div class="fixed inset-0 flex z-40 lg:hidden" role="dialog" aria-modal="true">
                     <div class="fixed inset-0 bg-gray-600 bg-opacity-75" aria-hidden="true"></div>
@@ -131,12 +133,15 @@
                         <section aria-labelledby="primary-heading" class="flex-1 flex flex-col order-last">
                             @include('layouts.topbar')
                             <!-- Your content -->
-                            <div class="container mx-auto flex-1 flex flex-col">
-                                <div class="grow mt-10 mb-2 overflow-y-auto">
+                            <div class="min-w-full flex-1 flex flex-col">
+                                <div class="grow mx-5 mt-10 mb-2 overflow-y-auto">
                                     {{ $slot }}
                                 </div>
                                 <div class="shrink">
-                                    <span class="text-gray-400">&copy; Copyright {{ date('Y') }}</span> BingHR.io
+                                    <span class="text-slate-400">&copy; Copyright {{ date('Y') }}</span>
+                                    <span class="text-gray-500 font-bold">
+                                        BingHR.io
+                                    </span>
                                 </div>
                             </div>
                         </section>
