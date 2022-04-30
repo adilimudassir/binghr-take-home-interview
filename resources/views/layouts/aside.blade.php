@@ -1,4 +1,4 @@
-<aside class="block">
+<aside class="block transition-all duration-700 ease-in-out delay-300" x-show="sideBarOpen">
     <div class="h-full relative flex flex-col w-60 border-r border-gray-200 bg-white overflow-y-auto">
         <ul role="list" class="mt-[100px] space-y-3">
             <li class="flow-root">

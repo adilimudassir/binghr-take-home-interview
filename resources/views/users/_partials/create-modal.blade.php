@@ -20,26 +20,26 @@
                     <div class="p-6 flex-auto">
                         <div class="grid grid-cols-1">
                             <div class="my-3 pt-0">
-                                <input type="text" name="employee_id" placeholder="Employee ID *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="text" name="employee_id" placeholder="Employee ID *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10 h-10" />
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-3">
                             <div class="my-3 pt-0">
-                                <input type="text" name="first_name" placeholder="First Name *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="text" name="first_name" placeholder="First Name *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10" />
                             </div>
                             <div class="my-3 pt-0">
-                                <input type="text" name="last_name" placeholder="Last Name *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="text" name="last_name" placeholder="Last Name *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10" />
                             </div>
                         </div>
                         <div class="grid grid-cols-3 gap-3">
                             <div class="my-3 pt-0">
-                                <input type="email" name="email" placeholder="Email ID *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="email" name="email" placeholder="Email ID *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10" />
                             </div>
                             <div class="my-3 pt-0">
-                                <input type="text" name="phone" placeholder="Mobile No" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="text" name="phone" placeholder="Mobile No" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10" />
                             </div>
                             <div class="my-3 pt-0">
-                                <select id="role" name="role" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full">
+                                <select id="role" name="role" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10">
                                     <option>Select Role type</option>
                                     @foreach($roles as $role)
                                     <option value="{{ $role->name }}">{{ $role->name }}</option>
@@ -49,13 +49,13 @@
                         </div>
                         <div class="grid grid-cols-3 gap-3">
                             <div class="my-3 pt-0">
-                                <input type="text" name="username" placeholder="Username *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="text" name="username" placeholder="Username *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10" />
                             </div>
                             <div class="my-3 pt-0">
-                                <input type="password" name="password" placeholder="Password *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="password" name="password" placeholder="Password *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10" />
                             </div>
                             <div class="my-3 pt-0">
-                                <input type="password" name="password_confirmation" placeholder="Confirm Password *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full" />
+                                <input type="password" name="password_confirmation" placeholder="Confirm Password *" class="px-2 py-1 placeholder-gray-500 text-gray-500 bg-white rounded text-sm border border-slate-100 shadow focus:border-1 focus:border-blue-100 focus:ring w-full h-10" />
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                     </td>
                                     @foreach($permissionsGroup as $permission)
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                        <input id="{{ $key }}" aria-describedby="{{ $permission['name'] }}" name="permissions[]" type="checkbox"  value="{{ $permission['name'] }}" class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded">
+                                        <input id="{{ $key }}" aria-describedby="{{ $permission['name'] }}" name="permissions[]" type="checkbox" value="{{ $permission['name'] }}" class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded h-10">
                                     </td>
                                     @endforeach
                                 </tr>

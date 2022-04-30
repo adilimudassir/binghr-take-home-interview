@@ -21,7 +21,7 @@
 <body class="font-sans antialiased">
     <div class="min-h-screen min-w-screen bg-gray-50">
         <!-- Page Content -->
-        <main>
+        <main x-data="{sideBarOpen: true}">
             <div class="min-h-screen flex">
                 <div class="fixed inset-0 flex z-40 lg:hidden" role="dialog" aria-modal="true">
                     <div class="fixed inset-0 bg-gray-600 bg-opacity-75" aria-hidden="true"></div>
