@@ -8,6 +8,13 @@ This project is a take-home interview for a fullstack laravel developer role at 
 - A user should be able to delete users records
 - A user should be able to update users records
 
+## Features Implemented
+- Replica of the given sample design bumper to bumper
+- A collapsible Menu
+- Modals for Create, Update and Delete operations
+- Complete CRUD on user resource
+- A search field on the users resource index page
+
 ## Stacks
 
 - [Laravel 8](https://laravel.com/)
