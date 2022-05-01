@@ -7,19 +7,20 @@ This project is a take-home interview for a fullstack laravel developer role at 
 - A user should be able to add users with their permissions
 - A user should be able to delete users records
 - A user should be able to update users records
+- It should show the lists of users in the database in a tabulated form with a search bar at the top right of the table
 
 ## Features Implemented
 - Replica of the given sample design bumper to bumper
 - A collapsible Menu
 - Modals for Create, Update and Delete operations
 - Complete CRUD on user resource
-- A search field on the users resource index page
+- A tabulated users records with a search bar
 
 ## Stacks
 
 - [Laravel 8](https://laravel.com/)
 - [Tailwindcss](https://tailwindcss.com/)
-- [JQuery](https://jquery.com/)
+- [JavaScript/JQuery](https://jquery.com/)
 
 ## Installation
 
